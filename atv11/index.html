@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas Bancárias</title>
+</head>
+<body>
+    <h1>Gerenciador de Contas Bancárias</h1>
+    <form id="conta-form">
+        <label for="agencia">Agência:</label>
+        <input type="text" id="agencia" required><br><br>
+        
+        <label for="numero">Número da Conta:</label>
+        <input type="text" id="numero" required><br><br>
+        
+        <label for="tipo">Tipo de Conta:</label>
+        <select id="tipo">
+            <option value="Conta Corrente">Conta Corrente</option>
+            <option value="Conta Poupança">Conta Poupança</option>
+            <option value="Conta Universitária">Conta Universitária</option>
+        </select><br><br>
+        
+        <label for="saldo">Saldo:</label>
+        <input type="text" id="saldo" required><br><br>
+        
+        <button type="button" onclick="inserirConta()">Inserir</button>
+        <button type="button" onclick="deletarConta()">Deletar</button>
+        <button type="button" onclick="visualizarContas()">Visualizar</button>
+    </form>
+    
+    <div id="lista-contas"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
