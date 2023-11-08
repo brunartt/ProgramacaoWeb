@@ -1,0 +1,91 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(223, 213, 225, 0.571);
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Estilos para o botão "Carregar Dados" */
+button#loadData {
+    background-color: #854293;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 16px; /* Tamanho da fonte personalizado */
+    border-radius: 5px; /* Borda arredondada para estilo */
+}
+
+/* Estilos para outros elementos */
+#dataSeries, #chartType, #dataPreview table {
+    margin: 10px 0;
+}
+
+#dataSeries {
+    width: 100%;
+    height: 150px;
+}
+
+#chartOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#chartOptions input {
+    margin: 5px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#exportChart {
+    background-color: #854293;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Estilos para a prévia dos dados em tabela */
+#dataPreview {
+    margin: 20px 0;
+}
+
+#dataPreview table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dataPreview th, #dataPreview td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#dataPreview th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#dataPreview tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#dataPreview tr:hover {
+    background-color: #ddd;
+}

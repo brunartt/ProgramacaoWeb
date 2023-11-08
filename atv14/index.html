@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema Bancário - Visualização de Dados Financeiros</title>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css">
+</head>
+<body>
+    <input type="file" id="csvFile" accept=".csv" />
+<button id="loadData">Carregar Dados</button>
+
+<div>
+    <label for="dataSeries">Selecionar séries de dados:</label>
+    <select id="dataSeries" multiple></select>
+</div>
+
+<div>
+    <label for="chartType">Tipo de gráfico:</label>
+    <select id="chartType">
+        <option value="bar">Barras</option>
+        <option value="line">Linhas</option>
+        <option value="pie">Pizza</option>
+    </select>
+</div>
+
+<div>
+    <label for="chartOptions">Opções do gráfico:</label>
+    <input type="checkbox" id="startFromZero" /> <label for="startFromZero">Começar o eixo Y do zero</label>
+    <input type="checkbox" id="stacked" /> <label for="stacked">Empilhar séries</label>
+    <input type="checkbox" id="smoothCurve" /> <label for="smoothCurve">Suavizar curvas</label>
+</div>
+
+<div>
+    <canvas id="financialChart" width="400" height="200"></canvas>
+</div>
+
+<div>
+    <button id="exportChart">Exportar Gráfico</button>
+</div>
+
+<div id="dataPreview">
+    <h3>Prévia dos Dados</h3>
+    <table></table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
